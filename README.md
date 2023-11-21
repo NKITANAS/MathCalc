@@ -3,13 +3,14 @@ Aids with math. Provides useful Math functions, and helps students who are too l
 # Planned Features (0.0.0)
 * Normal Calculator
 * Basic UI
-* Quadratics
+* Quadratics (Partially Complete)
     * Equation Factorer (Complete)
-    * Equation Info Calculator(Displays all info about the equation. Ex: Descriminant, roots, etc.)
-* Rational Numbers
-    * Fractions Calculator
-    * Fractions Simplifier
-    * Decimal to Fraction
+    * Equation Info Calculator(Displays all info about the equation. Ex: Descriminant, roots, etc.) (Partially Complete)
+* Rational Numbers (Complete)
+    * Fractions Calculator (Complete)
+    * Fractions Simplifier (Complete)
+    * Decimal to Fraction (Complete)
+    * Fraction to Decimal (Complete)
 * Geometry/Trigonometry
     * Function(sin, cos, etc.) to Angle
     * Triangle side calculator with angle and side
