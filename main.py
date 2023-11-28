@@ -132,13 +132,56 @@ def FractiontoDecimal(a, b):
 # Geometry/Trigonometry #
 
 # Function(sin, cos, tan) to angle
-def FunctoAngle():
-    pass
+def FunctoAngle(func, val):
+    result = 0
+    if func == "sin":
+        result = math.degrees(math.asin(int(val))
+    elif func == "cos":
+        result = math.degrees(math.acos(int(val))
+    elif func == "tg":
+        result = math.degrees(math.atan(int(val))
 
 # Triangle side Calculator w/ angle and side
-def SideCalculator():
-    pass
+def SideCalculator(angle, ang_val, side, side_val, ans):
+    result = 0
 
+    # Angle - α
+    if angle == "a": # angle,side|side_needed(ans)
+        if side == "c" and ans == "a": # α,c|a
+            result = math.degrees(math.sin(int(ang_val)))*(int(side_val)) # sin α * c = a
+        elif side == "c" and ans == "b": # α,c|b
+            result = math.degrees(math.cos(int(ang_val)))*(int(side_val)) # cos α * c = b
+        elif side == "a" and ans == "b": # α,a|b
+            result = (math.degrees(1/math.tan(int(ang_val))))*(int(side_val)) # ctg α * a = b, ctg = 1/tg
+        elif side == "a" and ans == "c": # α,a|c
+            result = (int(side_val))/(math.degrees(math.sin(int(ang_val)))) # a / sin α = c
+        elif side == "b" and ans == "a": # α,b|a
+            result = math.degrees(math.tan(int(ang_val)))*(int(side_val)) # tg α * b = a
+        elif side == "b" and ans == "c": # α,b|c
+            result = (int(side_val))/(math.degrees(math.cos(int(ang_val)))) # b / cos α = c
+        else:
+            raise Exception("Your sides are invalid. Maybe you made a typo? :)")
+        
+    # angle - β
+    elif angle == "b":
+        if side == "c" and ans == "a": # β,c|a
+            result = (math.degrees(math.cos(int(ang_val))))*(int(side_val)) # cos β * c = a
+        elif side == "c" and ans == "b": # β,c|b
+            result = (math.degrees(math.sin(int(ang_val))))*(int(side_val)) # sin β * c = b
+        elif side == "a" and ans == "c": # β,a|c
+            result = (int(side_val))/(math.degrees(math.cos(int(ang_val)))) # a / cos β = c
+        elif side == "a" and ans == "b": # β,a|b
+            result = (math.degrees(math.tan(int(ang_val))))*(int(side_val)) # tg β * a = b
+        elif side == "b" and ans == "a": # β,b|a
+            result = (math.degrees(1/math.tan(int(ang_val))))*(int(side_val)) # ctg β * b = a
+        elif side == "b" and ans == "c": # β,b|c
+            result = (int(side_val))/(math.degrees(math.sin(int(ang_val)))) # b / sin β = c
+
+    else:
+        raise Exception("Your angle is invalid. Maybe you made a typo? :)")
+
+    return result
+    
 # Area Calculator
-def AreaCalculator():
+def AreaCalculator(type):
     pass

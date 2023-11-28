@@ -12,6 +12,6 @@ Aids with math. Provides useful Math functions, and helps students who are too l
     * Decimal to Fraction (Complete)
     * Fraction to Decimal (Complete)
 * Geometry/Trigonometry
-    * Function(sin, cos, etc.) to Angle
-    * Triangle side calculator with angle and side
+    * Function(sin, cos, etc.) to Angle(Degrees) (Complete)
+    * Triangle side calculator with angle and side(Degrees)
     * Area Calculator
