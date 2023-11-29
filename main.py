@@ -135,11 +135,11 @@ def FractiontoDecimal(a, b):
 def FunctoAngle(func, val):
     result = 0
     if func == "sin":
-        result = math.degrees(math.asin(int(val))
+        result = math.degrees(math.asin(int(val)))
     elif func == "cos":
-        result = math.degrees(math.acos(int(val))
+        result = math.degrees(math.acos(int(val)))
     elif func == "tg":
-        result = math.degrees(math.atan(int(val))
+        result = math.degrees(math.atan(int(val)))
 
 # Triangle side Calculator w/ angle and side
 def SideCalculator(angle, ang_val, side, side_val, ans):
@@ -148,40 +148,63 @@ def SideCalculator(angle, ang_val, side, side_val, ans):
     # Angle - α
     if angle == "a": # angle,side|side_needed(ans)
         if side == "c" and ans == "a": # α,c|a
-            result = math.degrees(math.sin(int(ang_val)))*(int(side_val)) # sin α * c = a
+            result = (math.sin(math.radians(int(ang_val))))*(int(side_val)) # sin α * c = a
         elif side == "c" and ans == "b": # α,c|b
-            result = math.degrees(math.cos(int(ang_val)))*(int(side_val)) # cos α * c = b
+            result = (math.cos(math.radians(int(ang_val))))*(int(side_val))) # cos α * c = b
         elif side == "a" and ans == "b": # α,a|b
-            result = (math.degrees(1/math.tan(int(ang_val))))*(int(side_val)) # ctg α * a = b, ctg = 1/tg
+            result = ((1)/(math.tan(math.radians(int(ang_val)))))*(int(side_val)) # ctg α * a = b, ctg = 1/tg
         elif side == "a" and ans == "c": # α,a|c
-            result = (int(side_val))/(math.degrees(math.sin(int(ang_val)))) # a / sin α = c
+            result = (int(side_val))/(math.sin(math.radians(int(ang_val)))) # a / sin α = c
         elif side == "b" and ans == "a": # α,b|a
-            result = math.degrees(math.tan(int(ang_val)))*(int(side_val)) # tg α * b = a
+            result = (math.tan(math.radians(int(ang_val))))*(int(side_val)) # tg α * b = a
         elif side == "b" and ans == "c": # α,b|c
-            result = (int(side_val))/(math.degrees(math.cos(int(ang_val)))) # b / cos α = c
+            result = (int(side_val))/(math.cos(math.radians(int(ang_val)))) # b / cos α = c
         else:
             raise Exception("Your sides are invalid. Maybe you made a typo? :)")
         
     # angle - β
     elif angle == "b":
         if side == "c" and ans == "a": # β,c|a
-            result = (math.degrees(math.cos(int(ang_val))))*(int(side_val)) # cos β * c = a
+            result = (math.cos(math.radians(int(ang_val))))*(int(side_val)) # cos β * c = a
         elif side == "c" and ans == "b": # β,c|b
-            result = (math.degrees(math.sin(int(ang_val))))*(int(side_val)) # sin β * c = b
+            result = (math.sin(math.radians(int(ang_val))))*(int(side_val)) # sin β * c = b
         elif side == "a" and ans == "c": # β,a|c
-            result = (int(side_val))/(math.degrees(math.cos(int(ang_val)))) # a / cos β = c
+            result = (int(side_val))/(math.cos(math.radians(int(ang_val)))) # a / cos β = c
         elif side == "a" and ans == "b": # β,a|b
-            result = (math.degrees(math.tan(int(ang_val))))*(int(side_val)) # tg β * a = b
+            result = (math.tan(math.radians(int(ang_val))))*(int(side_val)) # tg β * a = b
         elif side == "b" and ans == "a": # β,b|a
-            result = (math.degrees(1/math.tan(int(ang_val))))*(int(side_val)) # ctg β * b = a
+            result = ((1)/(math.sin(math.radians(int(ang_val)))))*(int(side_val)) # ctg β * b = a
         elif side == "b" and ans == "c": # β,b|c
-            result = (int(side_val))/(math.degrees(math.sin(int(ang_val)))) # b / sin β = c
+            result = (int(side_val))/(math.sin(math.radians(int(ang_val)))) # b / sin β = c
 
     else:
         raise Exception("Your angle is invalid. Maybe you made a typo? :)")
 
     return result
     
-# Area Calculator
-def AreaCalculator(type):
-    pass
+# Area Calculators #
+
+# Triangle area calculator
+def TriangleAreaCalc(b, h):
+    result = (b*h)/2
+    return result
+
+# Rectangle/Square/Parellelogram area calculator
+def RectAreaCalc(w, h):
+    result = w*h
+    return result
+
+# Trapezoid area calculator
+def TrpezoidAreaCalc(a, b, h):
+    result = ((a+b)/2)*h
+    return result
+
+# Ellipse area calculator
+def EllipseAreaCalc(a, b): # π - 3.14
+    result = 3.14*a*b
+    return result
+
+# Circle area calculator
+def CircleAreaCalc(r):
+    result = 3.14*r*r
+    return result
