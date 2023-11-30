@@ -3,9 +3,9 @@ import fractions
 import sys
 import main
 
+print("Welcome to the noui version of MathCalc! \nType help for a list of commands.")
 # Command Loop, everything here is self-explanatory
 while True:
-    print("Welcome to the noui version of MathCalc! \nType help for a list of commands.")
     cmd = input()
     if cmd == "help":
         print("mathcalc - Outputs info about the mathcalc build you are using")

@@ -186,25 +186,35 @@ def SideCalculator(angle, ang_val, side, side_val, ans):
 
 # Triangle area calculator
 def TriangleAreaCalc(b, h):
+    b = float(b)
+    h = float(h)
     result = (b*h)/2
     return result
 
 # Rectangle/Square/Parellelogram area calculator
 def RectAreaCalc(w, h):
+    w = float(w)
+    h = float(h)
     result = w*h
     return result
 
 # Trapezoid area calculator
 def TrapezoidAreaCalc(a, b, h):
+    a = float(a)
+    b = float(b)
+    h = float(h)
     result = ((a+b)/2)*h
     return result
 
 # Ellipse area calculator
 def EllipseAreaCalc(a, b): # π = 3.14
+    a = float(a)
+    b = float(b)
     result = 3.14*a*b
     return result
 
 # Circle area calculator
 def CircleAreaCalc(r):
+    r = float(r)
     result = 3.14*r*r
     return result
