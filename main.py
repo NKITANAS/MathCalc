@@ -150,7 +150,7 @@ def SideCalculator(angle, ang_val, side, side_val, ans):
         if side == "c" and ans == "a": # α,c|a
             result = (math.sin(math.radians(float(ang_val))))*(float(side_val)) # sin α * c = a
         elif side == "c" and ans == "b": # α,c|b
-            result = (math.cos(math.radians(float(ang_val))))*(float(side_val))) # cos α * c = b
+            result = (math.cos(math.radians(float(ang_val))))*(float(side_val)) # cos α * c = b
         elif side == "a" and ans == "b": # α,a|b
             result = ((1)/(math.tan(math.radians(float(ang_val)))))*(float(side_val)) # ctg α * a = b, ctg = 1/tg
         elif side == "a" and ans == "c": # α,a|c

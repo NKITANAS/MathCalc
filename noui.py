@@ -8,9 +8,9 @@ while True:
     print("Welcome to the noui version of MathCalc! \nType help for a list of commands.")
     cmd = input()
     if cmd == "help":
-        print("mathcalc - outputs info about the mathcalc build you are using")
-        print("quadraticfactorer - factors a quadratic equation.")
-        print("quadraticinfo - gives you info abouat a quadratic equation(descriminant, roots).")
+        print("mathcalc - Outputs info about the mathcalc build you are using")
+        print("quadraticfactorer - Factors a quadratic equation.")
+        print("quadraticinfo - Gives you info abouat a quadratic equation(descriminant, roots).")
         print("fractioncalc - A fractions calculator")
         print("fractionsimp - Simplifies fractions")
         print("decfraction - Converts decimals to fractions")
@@ -22,7 +22,7 @@ while True:
         print("trapezoidarea - Calculates the area of a trapezoid")
         print("ellipsearea - Calculates the area of a Ellipse(π = 3.14)")
         print("circlearea - Calculates the area of a circle(π = 3.14)")
-        print("exit - exits the program")
+        print("exit - Exits the program")
 
     elif cmd == "mathcalc":
         print("Version: main 0.0.0")
