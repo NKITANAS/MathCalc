@@ -31,75 +31,75 @@ while True:
         print("cmd: 0.0.0")
 
     elif cmd == "quadraticfactorer":
-        a = input("A: ")
-        b = input("B: ")
-        c = input("C: ")
+        a = float(input("A: "))
+        b = float(input("B: "))
+        c = float(input("C: "))
         print(main.QuadraticFactorer(a, b, c))
 
     elif cmd == "quadraticinfo":
-        a = input("A: ")
-        b = input("B: ")
-        c = input("C: ")
+        a = float(input("A: "))
+        b = float(input("B: "))
+        c = float(input("C: "))
         print(main.QuadraticInfo(a, b, c))
 
     elif cmd == "fractioncalc":
-        a = input("A numerator: ")
-        b = input("A denominator: ")
-        c = input("B numerator: ")
-        d = input("B denominator: ")
-        e = input("Action: ")
+        a = float(input("A numerator: "))
+        b = float(input("A denominator: "))
+        c = float(input("B numerator: "))
+        d = float(input("B denominator: "))
+        e = int(input("Action: "))
         print(main.FractionCalculator(a, b, c, d, e))
 
     elif cmd == "fractionsimp":
-        a = input("Numerator: ")
-        b = input("Denominator: ")
+        a = float(input("Numerator: "))
+        b = float(input("Denominator: "))
         print(main.FractionsSimplifier(a, b))
 
     elif cmd == "decfraction":
-        a = input("Decimal: ")
+        a = float(input("Decimal: "))
         print(main.DecimaltoFraction(a))
 
     elif cmd == "fractiondec":
-        a = input("Numerator: ")
-        b = input("Denominator: ")
+        a = float(input("Numerator: "))
+        b = float(input("Denominator: "))
         print(main.FractiontoDecimal(a, b))
 
     elif cmd == "funcangle":
         a = input("Function(sin, cos, or tg): ")
-        b = input("Value: ")
+        b = float(input("Value: "))
         print(main.FunctoAngle(a, b))
 
     elif cmd == "sidecalc":
         a = input("Angle(a or b): ")
-        b = input("Angle Value: ")
+        b = float(input("Angle Value: "))
         c = input("Side(a, b, c): ")
-        d = input("Side Value: ")
+        d = float(input("Side Value: "))
         e = input("Side you want to find: ")
         print(main.SideCalculator(a, b, c, d, e))
 
     elif cmd == "trianglearea":
-        a = input("Base: ")
-        b = input("Height: ")
+        a = float(input("Base: "))
+        b = float(input("Height: "))
         print(main.TriangleAreaCalc(a, b))
 
     elif cmd == "rectarea":
-        a = input("Base: ")
-        b = input("Width/Height: ")
+        a = float(input("Base: "))
+        b = float(input("Width/Height: "))
         print(main.RectAreaCalc(a, b))
 
     elif cmd == "trapezoidarea":
-        a = input("Base1: ")
-        b = input("Base2: ")
-        c = input("Height: ")
+        a = float(input("Base1: "))
+        b = float(input("Base2: "))
+        c = float(input("Height: "))
         print(main.TrapezoidAreaCalc(a, b, c))
 
     elif cmd == "ellipsearea":
-        a = input("a: ")
-        b = input("b: ")
+        a = float(input("a: "))
+        b = float(input("b: "))
         print(main.EllipseArecalc(a, b))
 
     elif cmd == "circlearea":
-        a = input("Radius: ")
+        a = float(input("Radius: "))
         print(main.CircleAreaCalc(a))
     
     elif cmd == "exit":
