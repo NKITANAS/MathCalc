@@ -1,21 +1,23 @@
 # MathCalc
-A collection of very niche math functions for algebra, Geometry, and Trigonometry. There are 2 variants: ui and noui. noui is a command prompt style interface, while the ui version has a full-fledged GUI implementation.
-# Planned Features (1.0.0)
+A collection of very niche math functions for Algebra, Geometry, and Trigonometry. There are 2 variants: ui and noui. noui is a command prompt style interface, while the ui version is a full-fledged GUI implementation.
+# Releases
+The noui version of MathCalc is finished, and can be used by downloading the main branch and running noui.py. The ui version is not functional yet and will release December 3rd.
+# List Of Features (1.0.0)
 * Basic UI (In Progress)
-* Quadratics (Complete)
-    * Equation Factorer (Complete)
-    * Equation Info Calculator(Displays all info about the equation. Ex: Descriminant, roots, etc.) (Complete)
-* Rational Numbers (Complete)
-    * Fractions Calculator (Complete)
-    * Fractions Simplifier (Complete)
-    * Decimal to Fraction (Complete)
-    * Fraction to Decimal (Complete)
-* Geometry/Trigonometry (Complete)
-    * Function(sin, cos, etc.) to Angle(Degrees) (Complete)
-    * Triangle side calculator with angle and side(Degrees) (Complete)
-    * Area Calculators (Complete)
-        * Triangle Area (Complete)
-        * Rectangle/square/parallelogram Area (Complete)
-        * Trapezoid Area (Complete)
-        * Ellipse Area (Complete)
-        * Circle Area (Complete)
+* Quadratics
+    * Equation Factorer
+    * Equation Info Calculator(Displays all info about the equation. Ex: Descriminant, roots, etc.)
+* Rational Numbers
+    * Fractions Calculator
+    * Fractions Simplifier
+    * Decimal to Fraction
+    * Fraction to Decimal
+* Geometry/Trigonometry
+    * Function(sin, cos, etc.) to Angle(Degrees)
+    * Triangle side calculator with angle and side(Degrees)
+    * Area Calculators
+        * Triangle Area
+        * Rectangle/square/parallelogram Area
+        * Trapezoid Area
+        * Ellipse Area
+        * Circle Area
