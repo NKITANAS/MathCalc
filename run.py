@@ -10,12 +10,12 @@ while True:
     if cmd == "help":
         print("mathcalc - Outputs info about the mathcalc build you are using")
         print("quadraticfactorer - Factors a quadratic equation.")
-        print("quadraticinfo - Gives you info abouat a quadratic equation(descriminant, roots).")
+        print("quadraticinfo - Gives you info about a quadratic equation(discriminant, roots).")
         print("fractioncalc - A fractions calculator")
         print("fractionsimp - Simplifies fractions")
         print("decfraction - Converts decimals to fractions")
         print("fractiondec - Converts fractions to decimals")
-        print("funcangle - Conversts the result of a trigonometric function(ex: sin) and returns it as an angle(ex: input 0.5, returns 30)")
+        print("funcangle - Converts the result of a trigonometric function(ex: sin) and returns it as an angle(ex: input 0.5, returns 30)")
         print("sidecalc - Calculates a side of a right triangle using an angle and a side")
         print("trianglearea - Calculates the area of a triangle")
         print("rectarea - Calculates the area of a rectangle")
@@ -96,7 +96,7 @@ while True:
     elif cmd == "ellipsearea":
         a = float(input("a: "))
         b = float(input("b: "))
-        print(main.EllipseArecalc(a, b))
+        print(main.EllipseAreaCalc(a, b))
 
     elif cmd == "circlearea":
         a = float(input("Radius: "))

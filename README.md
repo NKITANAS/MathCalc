@@ -5,7 +5,7 @@ Version 1.0.0 has been released! Right below the feature list is the roadmap for
 # List Of Features (1.0.0)
 * Quadratics
     * Equation Factorer
-    * Equation Info Calculator(Displays all info about the equation. Ex: Descriminant, roots, etc.)
+    * Equation Info Calculator(Displays all info about the equation. Ex: Discriminant, roots, etc.)
 * Rational Numbers
     * Fractions Calculator
     * Fractions Simplifier
@@ -31,7 +31,7 @@ Version 1.0.0 has been released! Right below the feature list is the roadmap for
 * 3D Shapes(Surface area and Volume Calculators)
     * Cube Area
     * Rectangular prism Area
-    * Cyllinder Area
+    * Cylinder Area
     * Cone Area
     * Sphere Area
     * Hemisphere Area
