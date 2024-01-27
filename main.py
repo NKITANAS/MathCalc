@@ -2,6 +2,9 @@
 import fractions
 import math
 
+def version():
+    return "VERSION: 1.1.0"
+
 # Lists #
 
 elements = ["0", "H", "He", 
@@ -103,6 +106,59 @@ def QuadraticInfo(a, b, c):
         print("Descriminant:", desc)
         print("Root1:", root1)
         print("Root2:", root2)
+
+# Chemistry #
+
+# Compound Mass Calculator
+def CompoundMassCalculator(comp):
+    mass = 0
+    el = ""
+    compound = []
+    digit = ""
+
+    # Convert the compound into a list
+    for i in range(len(comp)):
+        if comp[i].isupper():
+            if el == "":
+                el = comp[i]
+            else:
+                if comp[i-1].isdigit():
+                    el = comp[i]
+                compound.append(el)
+                el = comp[i]
+
+        elif comp[i].islower():
+            el = el + comp[i]
+
+        elif comp[i].isdigit():
+            digit = comp[i]
+            repeat = 1
+            try:
+                while comp[i+repeat].isdigit():
+                    digit = digit + comp[i+repeat]
+                    repeat += 1
+            except:
+                pass
+            for i in range(int(digit)):
+                compound.append(el)
+
+    # Use the list to calculate the mass
+    for i in range(len(compound)):
+        mass += atomicmass[elements.index(compound[i])]
+    
+    return mass
+
+# Compound Mole Calculator
+def CompoundMoleCalculator(comp, mass):
+    el = ""
+    compound = []
+    digit = ""
+    moles = 0
+
+    # Use the list to find the amount of moles
+    compoundmolarmass = CompoundMassCalculator(comp) # We already have a function for this
+    moles = mass / compoundmolarmass
+    return moles
 
 # Rational Numbers #
 

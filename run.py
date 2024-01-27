@@ -1,5 +1,3 @@
-import math
-import fractions
 import sys
 import main
 
@@ -11,6 +9,8 @@ while True:
         print("mathcalc - Outputs info about the mathcalc build you are using")
         print("quadraticfactorer - Factors a quadratic equation.")
         print("quadraticinfo - Gives you info about a quadratic equation(discriminant, roots).")
+        print("compoundmasscalc - Calculates the molar mass of a compound")
+        print("compoundmolecalc - Calculates the amount of moles of a compound")
         print("fractioncalc - A fractions calculator")
         print("fractionsimp - Simplifies fractions")
         print("decfraction - Converts decimals to fractions")
@@ -25,10 +25,9 @@ while True:
         print("exit - Exits the program")
 
     elif cmd == "mathcalc":
-        print("Version: main 0.0.0")
-        print("Build: 0")
-        print("Noui: true")
-        print("cmd: 0.0.0")
+        print(main.version())
+        print("BUILD: 0")
+        print("CMD: 1.1.0")
 
     elif cmd == "quadraticfactorer":
         a = float(input("A: "))
@@ -41,6 +40,15 @@ while True:
         b = float(input("B: "))
         c = float(input("C: "))
         print(main.QuadraticInfo(a, b, c))
+    
+    elif cmd == "compoundmasscalc":
+        a = input("Compound:")
+        print(main.CompoundMassCalculator(a))
+    
+    elif cmd == "compoundmolecalc":
+        a = input("Compound: ")
+        b = float(input("Mass: "))
+        print(main.CompoundMoleCalculator(a, b))
 
     elif cmd == "fractioncalc":
         a = float(input("A numerator: "))
@@ -106,4 +114,4 @@ while True:
         sys.exit()
 
     else:
-        print("Unknown command,", cmd, ". Type help for a list of commands.")
+        print("Unknown command, " + '"' + cmd + '"' + ". Type help for a list of commands.")
