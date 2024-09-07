@@ -2,7 +2,7 @@
 A collection of very niche math functions for Algebra, Geometry, and Trigonometry.
 # Releases
 Version 1.0.0 has been released! Right below the feature list is the roadmap for this project. To run, download release v1.0.0 and run run.py.
-# List Of Features (1.0.0)
+# List Of Features (1.0.1)
 * Quadratics
     * Equation Factorer
     * Equation Info Calculator(Displays all info about the equation. Ex: Discriminant, roots, etc.)
@@ -20,14 +20,13 @@ Version 1.0.0 has been released! Right below the feature list is the roadmap for
     * Trapezoid Area
     * Ellipse Area
     * Circle Area
+* Chemistry
+    * Compound Mass Calculator
+    * Compound Mole Calculator
 # Roadmap(Bound to add/remove features)
-### 1.1.0
-*Chemistry Update*
-* Mass Calculator(Gives you the molar mass of a element/compound)
-* Mole Calculator(Calculates the amount of a given element/compound in moles using it's mass in grams)
 
-### 1.2.0
-*Area Calculator Update*
+### 1.0.2
+*GeoArea Update*
 * 3D Shapes(Surface area and Volume Calculators)
     * Cube Area
     * Rectangular prism Area
@@ -35,22 +34,20 @@ Version 1.0.0 has been released! Right below the feature list is the roadmap for
     * Cone Area
     * Sphere Area
     * Hemisphere Area
-
-### 1.3.0
-*Geometry Update*
 * Radians To Degrees/Degrees to Radians
 * Total Angle sum calculator for n-sided shapes
 
-### 1.4.0
+### 1.0.4
 *Quadratics Update*
 * Update Quadratic Info Calculator
 * Vertex Calculator
 
-### 1.5.0
+### 1.1.0
 *UI Update*
 * Add UI
+* Switch to CMD Command Line
 
-### 1.6.0
+### 1.1.1
 * Add Construction Cheat Sheet in UI Version
 * Add a regular calculator in UI
 

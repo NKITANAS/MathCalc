@@ -3,7 +3,7 @@ import fractions
 import math
 
 def version():
-    return "VERSION: 1.1.0"
+    return "Version: 1.1.0\nUsing MathCalc-Command v1"
 
 # Lists #
 
@@ -282,4 +282,9 @@ def EllipseAreaCalc(a, b): # π = 3.14
 def CircleAreaCalc(r):
     result = 3.14*r*r
     return result
+
+# Calculate Prism Area
+
+def RectanglePrismAreaCalc(w, h, l):
+    return w*h*l
 
